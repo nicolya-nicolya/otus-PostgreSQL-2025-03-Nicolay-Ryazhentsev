@@ -84,6 +84,9 @@ ps auxf | grep postgres
 pg_lsclusters
 ```
 
+![image](https://github.com/user-attachments/assets/2723a9d3-900f-48f6-bdd4-f398653eb964)
+
+
 ### 5.2 Создание нового экземпляра
 ```bash
 pg_createcluster 17 instance02
@@ -101,14 +104,17 @@ pg_ctlcluster 17 instance02 start
 
 ### 6.1 Проверка подключения
 - Проверка через pgAdmin
+
   > **Примечание**: ip \a покажет адреса сетевых интерфейсов. В данном случае адрес: **192.168.118.128**
+
+
 ![image](https://github.com/user-attachments/assets/36c1bcae-e675-4e6f-9cb1-a80e0e107b42)
 ![image](https://github.com/user-attachments/assets/f25ff8bf-a967-4816-867b-2129abfc5b87)
 
 
 - Проверка через DBeaver
 
-<!--
-![Проверка подключения](screenshots/07_connection_check.png)
--->
+
+![image](https://github.com/user-attachments/assets/b34455ec-fd84-4d8f-9e32-6c69ff2cfe87)
+
 
