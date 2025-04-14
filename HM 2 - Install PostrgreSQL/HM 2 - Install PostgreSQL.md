@@ -59,22 +59,14 @@ ps auxf | grep postgres
 ### 4.1 Настройка доступа
 1. Настройка удаленного доступа в `pg_hba.conf`
 ![image](https://github.com/user-attachments/assets/5a8e9c4f-9529-4c20-845a-308f6d4bf811)
-> **Важно**: Запись `0.0.0.0/0` означает "все возможные IPv4 адреса". 
+> **Примечание**: Запись `0.0.0.0/0` означает "все возможные IPv4 адреса". 
 2. Установка пароля для пользователя postgres через psql
 
 ### 4.2 Оптимизация параметров
 - Настройка основных параметров в `postgresql.conf` с помощью PGTune
-- Настроить прослушивание в `postgresql.conf`:
-     ```bash
-     sudo nano /etc/postgresql/17/main/postgresql.conf
-     ```
-     ```
-     listen_addresses = '*'
-     ```
-   - Перезапустить PostgreSQL:
-     ```bash
-     sudo systemctl restart postgresql
-
+- Настроить прослушивание в `postgresql.conf`:     
+     listen_addresses = '*'  
+> **Примечание**: Слушать подключения со всех адресов. '*' означает все доступные IP-адреса, также можно указать список конкретных адресов.
 ![image](https://github.com/user-attachments/assets/26469069-4edd-4616-8ea8-222110bec063)
 
 
@@ -100,13 +92,13 @@ pg_ctlcluster 17 instance02 start
 
 ## 6. Проверка работоспособности
 
-### 6.1 Проверка процессов
-```bash
-ps auxf | grep postgres
-```
-
-### 6.2 Проверка подключения
+### 6.1 Проверка подключения
 - Проверка через pgAdmin
+  > **Примечание**: ip \a покажет адреса сетевых интерфейсов. В данном случае адрес: **192.168.118.128**
+![image](https://github.com/user-attachments/assets/36c1bcae-e675-4e6f-9cb1-a80e0e107b42)
+![image](https://github.com/user-attachments/assets/f25ff8bf-a967-4816-867b-2129abfc5b87)
+
+
 - Проверка через DBeaver
 
 <!--
