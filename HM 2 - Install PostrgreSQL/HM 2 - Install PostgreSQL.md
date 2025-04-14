@@ -50,24 +50,33 @@ systemctl status postgresql
 ps auxf | grep postgres
 ```
 
-<!--
-![Структура каталогов](screenshots/04_directory_structure.png)
--->
+![image](https://github.com/user-attachments/assets/fd3b93b6-5e9a-435e-972c-d0def19d92f5)
+
+
 
 ## 4. Настройка после установки
 
 ### 4.1 Настройка доступа
 1. Настройка удаленного доступа в `pg_hba.conf`
+![image](https://github.com/user-attachments/assets/5a8e9c4f-9529-4c20-845a-308f6d4bf811)
+> **Важно**: Запись `0.0.0.0/0` означает "все возможные IPv4 адреса". 
 2. Установка пароля для пользователя postgres через psql
 
 ### 4.2 Оптимизация параметров
 - Настройка основных параметров в `postgresql.conf` с помощью PGTune
-- Настройка архивирования WAL
-- Настройка системы ELK для архива логов
+- Настроить прослушивание в `postgresql.conf`:
+     ```bash
+     sudo nano /etc/postgresql/17/main/postgresql.conf
+     ```
+     ```
+     listen_addresses = '*'
+     ```
+   - Перезапустить PostgreSQL:
+     ```bash
+     sudo systemctl restart postgresql
 
-<!--
-![Настройка доступа](screenshots/05_access_configuration.png)
--->
+![image](https://github.com/user-attachments/assets/26469069-4edd-4616-8ea8-222110bec063)
+
 
 ## 5. Создание дополнительных экземпляров
 
