@@ -76,10 +76,9 @@ ps auxf | grep postgres
 
 ### 4.2 Оптимизация параметров
 - Настройка основных параметров в `postgresql.conf` с помощью PGTune
-- Настроить прослушивание в `postgresql.conf`:     
-     **listen_addresses = '*'  **
+- Настроить прослушивание в `postgresql.conf`: 
 
-> **Примечание**: Слушать подключения со всех адресов. '*' означает все доступные IP-адреса, также можно указать список конкретных адресов.
+> **Примечание**: listen_addresses = '*' — cлушать подключения со всех адресов. '*' означает все доступные IP-адреса, также можно указать список конкретных адресов.
 
 
 ![image](https://github.com/user-attachments/assets/26469069-4edd-4616-8ea8-222110bec063)
@@ -95,18 +94,7 @@ pg_lsclusters
 ![image](https://github.com/user-attachments/assets/2723a9d3-900f-48f6-bdd4-f398653eb964)
 
 
-### 5.2 Создание нового экземпляра
-```bash
-pg_createcluster 17 instance02
-sudo systemctl daemon-reload
-pg_ctlcluster 17 instance02 start
-```
 
-> **Примечание**: Автозапуск, порт и каталоги настраиваются автоматически
-
-<!--
-![Создание экземпляра](screenshots/06_instance_creation.png)
--->
 
 ## 6. Проверка работоспособности
 
