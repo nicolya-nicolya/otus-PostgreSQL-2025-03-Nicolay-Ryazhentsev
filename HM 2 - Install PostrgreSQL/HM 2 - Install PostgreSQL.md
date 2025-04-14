@@ -18,7 +18,6 @@ sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 > **Важно**: Параметр `-k` для `initdb` включает проверку контрольных сумм в базах данных
 
 
-![image](https://github.com/user-attachments/assets/a28dc9a3-ad1c-4b37-a787-5056f551b576)
 
 
 
@@ -34,9 +33,9 @@ apt install postgresql-17
 systemctl status postgresql
 ```
 
-<!--
-![Проверка установки](screenshots/03_installation_check.png)
--->
+
+![image](https://github.com/user-attachments/assets/a28dc9a3-ad1c-4b37-a787-5056f551b576)
+
 
 ## 3. Структура каталогов PostgreSQL
 
