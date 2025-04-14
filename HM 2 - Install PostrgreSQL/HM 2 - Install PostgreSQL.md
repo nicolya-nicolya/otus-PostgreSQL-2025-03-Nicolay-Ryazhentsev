@@ -15,6 +15,9 @@ sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 ### 1.2 Настройка параметров установки
 Файл конфигурации: `/etc/postgresql-common/createcluster.conf`
 
+![image](https://github.com/user-attachments/assets/227edc43-e4c5-4a1e-9fcb-c3bed9720346)
+
+
 > **Важно**: Параметр `-k` для `initdb` включает проверку контрольных сумм в базах данных
 
 
