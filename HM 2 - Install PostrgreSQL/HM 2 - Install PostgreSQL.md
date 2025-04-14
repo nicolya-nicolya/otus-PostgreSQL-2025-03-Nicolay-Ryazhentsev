@@ -17,9 +17,10 @@ sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 
 > **Важно**: Параметр `-k` для `initdb` включает проверку контрольных сумм в базах данных
 
-<!--
-![Настройка параметров](screenshots/02_configuration.png)
--->
+
+![image](https://github.com/user-attachments/assets/a28dc9a3-ad1c-4b37-a787-5056f551b576)
+
+
 
 ## 2. Установка PostgreSQL 17
 
