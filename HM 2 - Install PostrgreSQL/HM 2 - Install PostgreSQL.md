@@ -45,7 +45,7 @@ systemctl status postgresql
 - **Логи**: `/var/log/postgresql`
 - **Исполняемые файлы**: `/usr/lib/postgresql/17/bin`
 
-### 3.2 Проверка процессов
+### 3.2 Проверка процессов 
 ```bash
 ps auxf | grep postgres
 ```
