@@ -104,6 +104,8 @@ sudo  pg_ctlcluster  17  main  stop
 
 - Диск подключен к виртуальной машине через режим редактирования  
 
+**Скриншот 4**: Настройки виртуальной машины с новым диском
+
 ![image](https://github.com/user-attachments/assets/8b0a0e51-39d7-4680-9688-6978c02a9981)
 
 
@@ -174,6 +176,7 @@ sudo  reboot
 df  -h  # Проверка сохранения монтирования
 
 ```
+**Скриншот 7**: Вывод команды df, показывающий примонтированный диск
 
 ![image](https://github.com/user-attachments/assets/38780743-b6f7-4119-a5ea-3a91f60187e9)
 ![image](https://github.com/user-attachments/assets/42549166-6e94-4eae-9134-ec6436febdf8)
@@ -263,7 +266,8 @@ sudo  pg_ctlcluster  17  main  start
 
 - Причина: PostgreSQL необходимо указать новое расположение директории с данными
 
-  
+
+**Скриншот 11**: Измененная конфигурация в postgresql.conf  
 
 ![image](https://github.com/user-attachments/assets/e9d2e988-d2fc-4d33-95a1-f44adbabe83b)
 
@@ -285,6 +289,7 @@ sudo  pg_ctlcluster  17  main  start
 **Результат**: ✅ Успех - кластер PostgreSQL запущен с новой директорией данных
 
   
+**Скриншот 12**: Успешный запуск кластера
 
 ![image](https://github.com/user-attachments/assets/f4f4e60f-3c8e-4b82-b96e-d06e0c31eef1)
 
@@ -304,6 +309,8 @@ sudo  pg_ctlcluster  17  main  start
 ```
 SELECT * FROM employees
 ```
+
+**Скриншот 13**: Результат запроса к тестовой таблице
 
 ![image](https://github.com/user-attachments/assets/be2fa661-44b8-4680-8371-1e61f947484e)
 
