@@ -65,6 +65,9 @@ VALUES
 
 **Скриншот 2**: Создание тестовой таблицы и вставка данных
 
+![image](https://github.com/user-attachments/assets/9ad88c43-e09c-47f8-afc1-a3f4a4cc6bf7)
+
+
 
   
 
@@ -195,7 +198,7 @@ sudo  chown  -R  postgres:postgres  /mnt/data/
 
 ```
 
-**Скриншот 8**: Результат выполнения команды ls -la /mnt/data
+**Скриншот 8**: Результат выполнения команды ls -ld /mnt/data
 ![image](https://github.com/user-attachments/assets/d6154bc3-2409-445d-b42d-6efd17e06554)
 
 
