@@ -128,6 +128,7 @@ sudo  mount  /dev/sdb1  /mnt/data
 ```
 
 **Скриншот 5**: Процесс разметки и форматирования диска
+![image](https://github.com/user-attachments/assets/694f4520-9403-4498-a19e-0c4bbb7c47d7)
 
   
 
@@ -147,6 +148,7 @@ sudo  mount  /dev/sdb1  /mnt/data
 
 **Скриншот 6**: Содержимое файла /etc/fstab
 
+![image](https://github.com/user-attachments/assets/8d079076-eb3a-4518-940a-150db37a16d6)
   
 
 ---
@@ -159,11 +161,14 @@ sudo  mount  /dev/sdb1  /mnt/data
 
 sudo  reboot
 
-df  -h  /mnt/data  # Проверка сохранения монтирования
+df  -h  # Проверка сохранения монтирования
 
 ```
 
-**Скриншот 7**: Вывод команды df, показывающий примонтированный диск
+![image](https://github.com/user-attachments/assets/38780743-b6f7-4119-a5ea-3a91f60187e9)
+![image](https://github.com/user-attachments/assets/42549166-6e94-4eae-9134-ec6436febdf8)
+
+
 
   
 
@@ -184,6 +189,8 @@ sudo  chown  -R  postgres:postgres  /mnt/data/
 ```
 
 **Скриншот 8**: Результат выполнения команды ls -la /mnt/data
+![image](https://github.com/user-attachments/assets/d6154bc3-2409-445d-b42d-6efd17e06554)
+
 
   
 
@@ -200,7 +207,9 @@ sudo  mv  /var/lib/postgresql/17  /mnt/data
 ```
 
 **Скриншот 9**: Процесс перемещения данных
+![image](https://github.com/user-attachments/assets/f0668d1d-7432-4e8d-9301-34ce9384d5d4)
 
+![image](https://github.com/user-attachments/assets/eede20c7-b058-495d-b436-bbffc08efc1f)
   
 
 ---
@@ -243,7 +252,8 @@ sudo  -u  postgres  pg_ctlcluster  17  main  start
 
   
 
-**Скриншот 11**: Измененная конфигурация в postgresql.conf
+![image](https://github.com/user-attachments/assets/e9d2e988-d2fc-4d33-95a1-f44adbabe83b)
+
 
   
 
