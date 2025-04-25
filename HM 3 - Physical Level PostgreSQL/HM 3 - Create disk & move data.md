@@ -255,7 +255,7 @@ sudo  -u  postgres  pg_ctlcluster  17  main  start
 
 ```bash
 
-sudo  -u  postgres  pg_ctlcluster  17  main  start
+sudo  pg_ctlcluster  17  main  start
 
 ```
 
@@ -263,7 +263,9 @@ sudo  -u  postgres  pg_ctlcluster  17  main  start
 
   
 
-**Скриншот 12**: Успешный запуск кластера
+![image](https://github.com/user-attachments/assets/f4f4e60f-3c8e-4b82-b96e-d06e0c31eef1)
+
+
 
   
 
@@ -271,15 +273,8 @@ sudo  -u  postgres  pg_ctlcluster  17  main  start
 
   
 
-## Проверка данных
+## Проверка данных  
 
-  
-
-```bash
-
-# Подключение к PostgreSQL
-
-sudo  -u  postgres  psql  
 
 # Проверка данных в тестовой таблице
 
@@ -287,4 +282,5 @@ SELECT * FROM employees
 
 ```
 
-**Скриншот 13**: Результат запроса к тестовой таблице
+![image](https://github.com/user-attachments/assets/7459b1a4-d6c6-4cb3-907a-8147ba0b499f)
+
