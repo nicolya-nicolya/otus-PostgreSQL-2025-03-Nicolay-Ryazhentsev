@@ -303,7 +303,6 @@ sudo  pg_ctlcluster  17  main  start
 
 ```
 SELECT * FROM employees
-
 ```
 
 ![image](https://github.com/user-attachments/assets/be2fa661-44b8-4680-8371-1e61f947484e)
