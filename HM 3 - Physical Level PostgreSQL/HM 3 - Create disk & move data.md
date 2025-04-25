@@ -10,11 +10,14 @@
 
 ```bash
 
-sudo  -u  postgres  pg_lsclusters
+pg_ctlcluster 17 main status
 
 ```
 
-**Скриншот 1**: Вывод команды pg_lsclusters, показывающий текущий статус кластера
+**Скриншот 1**: Вывод команды pg_ctlcluster, показывающий текущий статус кластера
+
+![image](https://github.com/user-attachments/assets/60eeec26-3305-4027-a2b3-5f55e4cf9329)
+
 
   
 
@@ -73,11 +76,14 @@ VALUES
 
 ```bash
 
-sudo  -u  postgres  pg_ctlcluster  17  main  stop
+sudo  pg_ctlcluster  17  main  stop
 
 ```
 
 **Скриншот 3**: Остановка кластера PostgreSQL
+
+![image](https://github.com/user-attachments/assets/2ebad4a3-a19c-4a7d-bf05-03ba7dfbd3e0)
+
 
   
 
@@ -93,11 +99,12 @@ sudo  -u  postgres  pg_ctlcluster  17  main  stop
 
 - Создан новый диск размером 10GB в настройках ВМ
 
-- Диск подключен к виртуальной машине через режим редактирования
+- Диск подключен к виртуальной машине через режим редактирования  
 
-  
+![image](https://github.com/user-attachments/assets/8b0a0e51-39d7-4680-9688-6978c02a9981)
 
-**Скриншот 4**: Настройки виртуальной машины с новым диском
+
+
 
   
 
@@ -207,8 +214,8 @@ sudo  mv  /var/lib/postgresql/17  /mnt/data
 ```
 
 **Скриншот 9**: Процесс перемещения данных
-![image](https://github.com/user-attachments/assets/f0668d1d-7432-4e8d-9301-34ce9384d5d4)
 
+![image](https://github.com/user-attachments/assets/f0668d1d-7432-4e8d-9301-34ce9384d5d4)
 ![image](https://github.com/user-attachments/assets/eede20c7-b058-495d-b436-bbffc08efc1f)
   
 
@@ -220,7 +227,7 @@ sudo  mv  /var/lib/postgresql/17  /mnt/data
 
 ```bash
 
-sudo  -u  postgres  pg_ctlcluster  17  main  start
+sudo  pg_ctlcluster  17  main  start
 
 ```
 
@@ -229,6 +236,9 @@ sudo  -u  postgres  pg_ctlcluster  17  main  start
   
 
 **Скриншот 10**: Сообщение об ошибке при попытке запуска
+
+![image](https://github.com/user-attachments/assets/b1371d38-35a5-4a51-8e5e-18f3ea3410d8)
+
 
   
 
