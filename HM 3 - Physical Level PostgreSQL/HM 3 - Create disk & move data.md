@@ -278,9 +278,11 @@ sudo  pg_ctlcluster  17  main  start
 
 # Проверка данных в тестовой таблице
 
+```
 SELECT * FROM employees
 
 ```
 
-![image](https://github.com/user-attachments/assets/7459b1a4-d6c6-4cb3-907a-8147ba0b499f)
+![image](https://github.com/user-attachments/assets/be2fa661-44b8-4680-8371-1e61f947484e)
+
 
